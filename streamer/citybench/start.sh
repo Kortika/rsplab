@@ -8,4 +8,3 @@ cat docker-compose.yml
 
 docker-compose up -d
 	
-#./scripts/create-dashboards.sh $@
