@@ -5,7 +5,7 @@ networks:
       name: demo
 services:
   cadvisor:
-    image: google/cadvisor:v0.24.0
+    image: gcr.io/cadvisor/cadvisor
     container_name: cadvisor
     ports:
       - "9090:9090"

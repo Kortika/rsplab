@@ -12,7 +12,7 @@ else:
 comp = Template((open('./docker-compose.yaml.tmpl')).read())
 prop = Template((open('./tmpl.properties')).read())
 
-m = {'engine':engine, 'uuid':uuid.uuid1(), 'env':engine}
+m = {'engine': engine, 'uuid': uuid.uuid1(), 'env': engine}
 
 res = comp.substitute(m)
 text_file = open("docker-compose.yml", "w")
@@ -24,4 +24,5 @@ text_file = open("./setup.properties", "w")
 text_file.write(res)
 text_file.close()
 
-print m
+print(m)
+
